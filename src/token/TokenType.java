@@ -1,96 +1,86 @@
 package token;
 
-/**
- * The {@code TokeType} enumeration represents types of tokens in subset of Java
- * language
- * 
- */
 public enum TokenType {
-	BlockComment,
+    BlockComment,
 
-	LineComment,
+    LineComment,
 
-	WhiteSpace,
+    WhiteSpace,
 
-	Tab,
+    Tab,
 
-	NewLine,
+    NewLine,
 
-	CloseBrace,
+    CloseBrace,
 
-	OpenBrace,
+    OpenBrace,
 
-	OpeningCurlyBrace,
+    OpeningCurlyBrace,
 
-	ClosingCurlyBrace,
+    ClosingCurlyBrace,
 
-	DoubleConstant,
+    DoubleConstant,
 
-	IntConstant,
+    IntConstant,
 
-	Plus,
+    Plus,
 
-	Minus,
+    Minus,
 
-	Multiply,
+    Multiply,
 
-	Divide,
+    Divide,
 
-	Point,
+    Point,
 
-	EqualEqual,
+    EqualEqual,
 
-	Equal,
+    Equal,
 
-	ExclameEqual,
+    ExclameEqual,
 
-	Greater,
+    Greater,
 
-	Less,
+    Less,
 
-	Static,
+    Static,
 
-	Public,
+    Public,
 
-	Private,
+    Private,
 
-	Int,
+    Int,
 
-	Double,
+    Double,
 
-	Void,
+    Void,
 
-	False,
+    False,
 
-	True,
+    True,
 
-	Null,
+    Null,
 
-	Return,
+    Return,
 
-	New,
+    New,
 
-	Class,
+    Class,
 
-	If,
+    If,
 
-	While,
+    While,
 
-	Else,
+    Else,
 
-	Semicolon,
+    Semicolon,
 
-	Comma,
+    Comma,
 
-	Identifier;
+    Identifier;
 
-	/**
-	 * Determines if this token is auxiliary
-	 * 
-	 * @return {@code true} if token is auxiliary, {@code false} otherwise
-	 */
-	public boolean isAuxiliary() {
-		return this == BlockComment || this == LineComment || this == NewLine || this == Tab
-				|| this == WhiteSpace;
-	}
+    public boolean isAuxiliary() {
+        return this == BlockComment || this == LineComment || this == NewLine || this == Tab
+                || this == WhiteSpace;
+    }
 }
