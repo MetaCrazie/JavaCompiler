@@ -6,16 +6,13 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                JFrame frame = new JFrame("Lexical Analysis");
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.add(new GUI(frame));
-                frame.pack();
-                frame.setResizable(false);
-                frame.setVisible(true);
-            }
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Lexical Analyser");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.add(new GUI(frame));
+            frame.pack();
+            frame.setResizable(false);
+            frame.setVisible(true);
         });
     }
 }

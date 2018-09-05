@@ -27,10 +27,8 @@ import exceptions.AnalyzerException;
 @SuppressWarnings("serial")
 public class GUI extends JPanel {
     private JFrame frame;
-
     private JPanel codePanel;
     private JPanel buttonPanel;
-
     private JTabbedPane tabbedPane;
 
     private JTextArea codeArea;
@@ -42,7 +40,7 @@ public class GUI extends JPanel {
 
     private String sourceCode;
 
-    public GUI(JFrame frame) {
+    GUI(JFrame frame) {
         this.frame = frame;
         this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
         codePanel = new JPanel();
