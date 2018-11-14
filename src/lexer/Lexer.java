@@ -19,6 +19,7 @@ public class Lexer {
     public Lexer() {
         regEx = new TreeMap<TokenType, String>();
         launchRegEx();
+        System.out.println(regEx);
         result = new ArrayList<Token>();
     }
 
